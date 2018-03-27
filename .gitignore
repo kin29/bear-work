@@ -7,4 +7,4 @@
 /build/
 phpunit.xml
 /var/tmp/
-var/log/
+/var/log/

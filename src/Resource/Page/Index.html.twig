@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Today Saying</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Overpass Mono', monospace;
+      font-size: 1.5em;
+      color: #333;
+    }
+    .main {
+      padding: 10px;
+      margin: 0 auto;
+      background: #F5F5DC;
+      border: 1px solid #cccccc;
+    }
+    .saying dt,
+    .saying dd {
+      margin: 0 0 10px;
+    }
+    .saying_said,
+    .saying_who {
+      text-align: center;
+    }
+    .change_btn {
+      display: block;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>#Today Saying</h1>
+    <dl class="saying">
+      <dt class="saying_said">“&nbsp;{{ said }}&nbsp;”</dt>
+      <dd class="saying_who">〜{{ who }}〜</dd>
+    </dl>
+    <a href="/" class="change_btn">change</a>
+  </div>
+</body>
+</html>

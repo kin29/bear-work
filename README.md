@@ -30,8 +30,9 @@
     php bootstrap/api.php get '/said?mode=delete&id=1'
     php bootstrap/api.php get '/said?mode=insert&said=time is money&who=unknown'
       
-    php -S 127.0.0.1:8080 bootstrap/api.php
-    curl -i 'http://127.0.0.1:8080/said?mode=show'
+    //show "today saying"
+    php -S 127.0.0.1:8080 bootstrap/web.php
+    curl -i 'http://127.0.0.1:8080/'
 
 ## test data
     mkdir db

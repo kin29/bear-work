@@ -27,8 +27,8 @@
 ## Usage
     php bootstrap/api.php get '/said?mode=show'
     php bootstrap/api.php get '/said?mode=random'
-    php bootstrap/api.php get '/said?mode=delete&id=1'
-    php bootstrap/api.php get '/said?mode=insert&said=time is money&who=unknown'
+    php bootstrap/api.php put '/said?mode=delete&id=1'
+    php bootstrap/api.php post '/said?mode=insert&said=time is money&who=unknown'
       
     php -S 127.0.0.1:8080 bootstrap/api.php
     curl -i 'http://127.0.0.1:8080/said?mode=show'

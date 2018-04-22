@@ -40,9 +40,11 @@ class Said extends ResourceObject
                     ->fetch('assoc');
 
                 break;
+
             default;
                 $this->body = "not found mode[mode=$mode]";
         }
+
         return $this;
     }
 
@@ -56,7 +58,7 @@ class Said extends ResourceObject
         $data = array();
         $data['said'] = $said;
         $data['who'] = $who;
-        $data['create_date'] = new \DateTime('now',new \DateTimeZone('Asia/Tokyo'));
+        $data['create_date'] = new \DateTime('now', new \DateTimeZone('Asia/Tokyo'));
         $data['del_flg'] = 0;
         $this->db->insert('said_table', $data, array('create_date' => 'datetime'));
 
@@ -86,6 +88,7 @@ class Said extends ResourceObject
         // no content
         $this->code = 204;
         $this->body = "delete![id:$id]";
+
         return $this;
     }
 }

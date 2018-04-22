@@ -27,8 +27,8 @@
 ### API
     php bootstrap/api.php get '/said?mode=show'
     php bootstrap/api.php get '/said?mode=random'
-    php bootstrap/api.php get '/said?mode=delete&id=1'
-    php bootstrap/api.php get '/said?mode=insert&said=time is money&who=unknown'
+    php bootstrap/api.php put '/said?mode=delete&id=1'
+    php bootstrap/api.php post '/said?mode=insert&said=time is money&who=unknown'
     
 ### test saying data
     mkdir db
@@ -45,8 +45,7 @@
     INSERT INTO said_table (id, said, who, create_date, del_flg)
     VALUES (2, 'Leap before you look(見る前に飛べ))', 'W・H・オーデン', CURRENT_TIMESTAMP, 0);
 
-### HTML"today saying"
-    composer require madapaja/twig-module ^2.0
+### HTML "today saying"
     mkdir var/templates
     php -S 127.0.0.1:8080 bootstrap/web.php
     curl -i 'http://127.0.0.1:8080/'

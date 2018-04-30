@@ -29,4 +29,4 @@
     VALUES (2, 'Leap before you look(見る前に飛べ))', 'W・H・オーデン', CURRENT_TIMESTAMP, 0);
 
 ### memo
-    herokuでのdeploy用にProfile追加してます。
+    herokuでのdeploy用にProcfile追加してます。

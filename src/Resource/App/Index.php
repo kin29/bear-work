@@ -4,7 +4,7 @@ namespace MyVendor\WellSaid\Resource\App;
 use BEAR\Resource\ResourceObject;
 use Ray\CakeDbModule\DatabaseInject;
 
-class Said extends ResourceObject
+class Index extends ResourceObject
 {
     use DatabaseInject;
 

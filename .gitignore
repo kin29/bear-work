@@ -6,3 +6,6 @@
 /vendor/
 /build/
 phpunit.xml
+/var/tmp/
+/var/log/
+/db/said.sqlite3

@@ -5,10 +5,10 @@
     composer install
 
 ### API
-    php bootstrap/api.php get '/said?mode=show'
-    php bootstrap/api.php get '/said?mode=random'
-    php bootstrap/api.php put '/said?mode=delete&id=1'
-    php bootstrap/api.php post '/said?mode=insert&said=time is money&who=unknown'
+    php bootstrap/index.php get '/said?mode=show'
+    php bootstrap/index.php get '/said?mode=random'
+    php bootstrap/index.php put '/said?mode=delete&id=1'
+    php bootstrap/index.php post '/said?mode=insert&said=time is money&who=unknown'
     
     php -S 127.0.0.1:8080 bootstrap/index.php
     curl -i 'http://127.0.0.1:8080?mode=show'
@@ -30,3 +30,4 @@
 
 ### memo
     herokuでのdeploy用にProcfile追加してます。
+    bootstrap/api.php→bootstrap/index.phpに変更してます
